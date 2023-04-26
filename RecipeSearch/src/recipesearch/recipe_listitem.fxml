@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" style="-fx-border-width: 1px; -fx-border-color: #999999; -fx-border-radius: 1px; -fx-background-radius: 1px;" stylesheets="@recipe_search.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="recipeLabel" layoutX="14.0" layoutY="11.0" text="Stekt ägg">
-         <graphic>
-            <ImageView fx:id="recipeImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@resources/recipes/recipe1.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Label>
+      <ImageView fx:id="recipeImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="221.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../recipes/recipe1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cuisineImage" fitHeight="35.0" fitWidth="50.0" layoutX="90.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="370.0" AnchorPane.topAnchor="108.0">
+         <image>
+            <Image url="@../../recipes/recipe1.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="logoImg" fitHeight="20.0" fitWidth="20.0" layoutX="158.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="158.0">
+         <image>
+            <Image url="@../../recipes/recipe1.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="difficultyImg" fitHeight="20.0" fitWidth="40.0" layoutX="178.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="182.0">
+         <image>
+            <Image url="@resources/icon_difficulty_easy.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logoImg1" fitHeight="20.0" fitWidth="20.0" layoutX="226.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="226.0">
+         <image>
+            <Image url="@resources/icon_time.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTime" layoutX="248.0" layoutY="43.0" styleClass="text-smaller" stylesheets="@recipe_search.css" text="tid" AnchorPane.leftAnchor="248.0" />
+      <Label fx:id="recipeLabel" layoutX="158.0" layoutY="14.0" styleClass="text-larger" stylesheets="@recipe_search.css" text="Stekt ägg" textAlignment="CENTER" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="14.0" />
+      <Label fx:id="labelPrice" layoutX="310.0" layoutY="43.0" styleClass="text-smaller" text="kr" AnchorPane.leftAnchor="310.0" />
+      <TextFlow layoutX="160.0" layoutY="69.0" prefHeight="58.0" prefWidth="242.0">
+         <children>
+            <Text fx:id="textRecipe" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Text" wrappingWidth="300.0" x="160.0" y="90.0" />
+         </children>
+      </TextFlow>
    </children>
+   <styleClass>
+      <String fx:value="recipe-list-item" />
+      <String fx:value="recipe-list-item2" />
+   </styleClass>
 </fx:root>

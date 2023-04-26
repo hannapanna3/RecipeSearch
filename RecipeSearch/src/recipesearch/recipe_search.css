@@ -1,2 +1,57 @@
+.text-normal{
+    -fx-font-size: 13px;
+    -fx-font-family: "Avenir Book";
+}
+.text-normal-bold{
+    -fx-font-size: 13px;
+    -fx-font-family: "Avenir Book";
+    -fx-font-weight: bold;
+}
 
+.text-larger{
+    -fx-font-size: 16px;
+    -fx-font-family: "Avenir Book";
+}
 
+.text-smaller{
+    -fx-font-size: 10px;
+    -fx-font-family: "Avenir Book";
+}
+
+.text-label-main{
+    -fx-font-family: "Tw Cen MT Condensed";
+    -fx-font-size: 32px;
+}
+
+.text-label-logo{
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-size: 48px;
+}
+
+.text-label-logTwirl{
+    -fx-font-family: "Brush Script MT";
+    -fx-font-size: 64px;
+    -fx-text-fill: #FFAC33; /*orange */
+    -fx-rotate: -30;
+}
+
+.recipe-list-item:hover{
+    -fx-background-color: #FCFCFC;
+}
+
+.recipe-list-item2:pressed {
+    -fx-background-color: #D0D0D0;
+}
+.text-area .content {
+    -fx-background-color: -fx-background;
+}
+
+.text-area  {
+    -fx-background-color: -fx-background;
+
+}
+
+.text-background  {
+    -fx-background-color: rgba(0,0,0,0.75);
+
+}
